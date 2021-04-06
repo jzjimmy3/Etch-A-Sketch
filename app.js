@@ -1,10 +1,14 @@
-const container = document.querySelector('.container');
+const container = document.getElementById("container");
 
-for (let i = 0; i < 4; i++) {
-    const div = document.createElement('div');
-    div.classList.add('div')
-    div.textContent = 'Nothing';
-    container.appendChild(div);
-}
+function makeGrid(rows, cols) {
+    container.style.setProperty("--grid-rows", rows)
+    container.style.setProperty("--grid-cols", cols)
+    for (i = 0; i < (rows * cols); i++) {
+        let grid = document.createElement('div')
+        grid.innerText = (i + 1);
+        container.appendChild(grid).className = "grid-item";
+    };
+};
 
+makeGrid(16, 16)
 
