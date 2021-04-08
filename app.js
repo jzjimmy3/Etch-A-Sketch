@@ -12,15 +12,12 @@ function makeGrid(rows, cols) {
 
 makeGrid(16, 16)
 
+const grids = document.querySelectorAll(".grid-item")
+grids.forEach(item => {
+    item.addEventListener('mouseover', event => {
+        item.style.setProperty("background-color", "red")
+    })
+})
 
-// function fillGrid(rows, cols) {
-//     const grids = document.querySelector(".grid-item")
-//     for (let i = 0; i < (rows * cols); i++) {
-//         container.addEventListener("mouseover", function (color) {
-//             grids.style.setProperty("background-color", "red")
-//         }   
-//     }
-// }
 
-// fillGrid(16, 16)
 
