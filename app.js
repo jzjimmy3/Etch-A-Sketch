@@ -19,5 +19,14 @@ grids.forEach(item => {
     })
 })
 
+// function reset() {
+//     alert('Hello')
+// }
+const reset = document.getElementById("reset");
+reset.addEventListener('click', event => {
+    grids.forEach(item => {
+        item.style.setProperty("background-color", "white")
+    })
+})
 
 
