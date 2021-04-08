@@ -1,4 +1,4 @@
-const container = document.getElementById("container");
+const container = document.getElementById("grid-container");
 
 function makeGrid(rows, cols) {
     container.style.setProperty("--grid-rows", rows)
@@ -42,5 +42,21 @@ small.addEventListener('click', event => {
     makeGrid(10, 10)
     hover()
 })
+
+const med = document.getElementById("med");
+med.addEventListener('click', event => {
+    clearGrid()
+    makeGrid(20, 20)
+    hover()
+})
+
+const large = document.getElementById("large");
+large.addEventListener('click', event => {
+    clearGrid()
+    makeGrid(30, 30)
+    hover()
+})
+
+
 
 
