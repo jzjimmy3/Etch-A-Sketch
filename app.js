@@ -53,7 +53,7 @@ med.addEventListener('click', event => {
 const large = document.getElementById("large");
 large.addEventListener('click', event => {
     clearGrid()
-    makeGrid(30, 30)
+    makeGrid(25, 25)
     hover()
 })
 
