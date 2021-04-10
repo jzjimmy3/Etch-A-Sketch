@@ -23,7 +23,7 @@ function hover() {
     const grids = document.querySelectorAll(".grid-item")
     grids.forEach(item => {
         item.addEventListener('mouseover', event => {
-            item.style.setProperty("background-color", "red")
+            item.style.setProperty("background-color", "#52b043")
         })
     })
 }
@@ -56,7 +56,5 @@ large.addEventListener('click', event => {
     makeGrid(25, 25)
     hover()
 })
-
-
 
 
